@@ -36,4 +36,4 @@ const test = new Test(root, btn, async () => {
 	}
 });
 
-btn.addEventListener('click', async () => test.update());
+test.trigger.addEventListener('click', async () => test.update());
