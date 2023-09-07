@@ -1,8 +1,8 @@
 const http = require('node:http');
 const fs = require('node:fs');
 
-const hostname = 'localhost';
-const port = 5000;
+const hostname = process.env.HOSTNAME || 'localhost';
+const port = process.env.PORT || 5000;
 
 const server = http.createServer();
 
